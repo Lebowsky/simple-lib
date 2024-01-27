@@ -1,1 +1,1 @@
-from sm_products import Product
+from sm_products import ProductsListScreen

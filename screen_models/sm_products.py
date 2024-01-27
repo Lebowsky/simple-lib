@@ -1,7 +1,7 @@
 from simple_kit import Screen, HashMap
 
 
-class Product(Screen):
+class ProductsListScreen(Screen):
     def __init__(self, hash_map: HashMap, **kwargs):
         super().__init__(hash_map, **kwargs)
 
@@ -15,4 +15,10 @@ class Product(Screen):
             self.hash_map['setLocale'] = 'ru'
 
         self.hash_map.update_configurations()
+
+
+class ProductItemScreen(Screen):
+    def __init__(self, hash_map: HashMap, **kwargs):
+        super().__init__(hash_map, **kwargs)
+
 

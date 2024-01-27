@@ -81,5 +81,8 @@ class HashMap:
     def no_refresh(self):
         self['NoRefresh'] = ''
 
+    def beep(self, tone=''):
+        self.hash_map.put('beep', str(tone))
+
     def update_configurations(self):
         self.put('UpdateConfigurations')
