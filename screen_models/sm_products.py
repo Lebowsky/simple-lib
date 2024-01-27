@@ -9,6 +9,10 @@ class Product(Screen):
         pass
 
     def on_input(self):
-        self.hash_map.toast(self.listener)
+        if self.listener == 'set_en':
+            self.hash_map['setLocale'] = 'en'
+        elif self.listener == 'set_ru':
+            self.hash_map['setLocale'] = 'ru'
 
+        self.hash_map.update_configurations()
 

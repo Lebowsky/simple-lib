@@ -31,8 +31,8 @@
                                 "weight": "1",
                                 "Elements": [
                                     {
-                                        "Value": "show",
-                                        "Variable": "show",
+                                        "Value": "en",
+                                        "Variable": "set_en",
                                         "height": "wrap_content",
                                         "width": "match_parent",
                                         "orientation": "horizontal",
@@ -42,14 +42,15 @@
                                         "type": "Button"
                                     },
                                     {
-                                        "Value": "test",
-                                        "Variable": "",
+                                        "Value": "ru",
+                                        "Variable": "set_ru",
                                         "height": "wrap_content",
                                         "width": "match_parent",
-                                        "weight": "0",
+                                        "orientation": "horizontal",
+                                        "weight": "1",
                                         "TextBold": false,
                                         "TextItalic": false,
-                                        "type": "TextView"
+                                        "type": "Button"
                                     }
                                 ],
                                 "BackgroundColor": "#ffff00"
@@ -112,7 +113,7 @@
             {
                 "file_path": "D:/projects/simple UI/simple-lib/screen_models/sm_products.py",
                 "PyFileKey": "sm_products",
-                "PyFileData": "ZnJvbSBzaW1wbGVfa2l0IGltcG9ydCBTY3JlZW4sIEhhc2hNYXAKCgpjbGFzcyBQcm9kdWN0KFNjcmVlbik6CiAgICBkZWYgX19pbml0X18oc2VsZiwgaGFzaF9tYXA6IEhhc2hNYXAsICoqa3dhcmdzKToKICAgICAgICBzdXBlcigpLl9faW5pdF9fKGhhc2hfbWFwLCAqKmt3YXJncykKCiAgICBkZWYgb25fc3RhcnQoc2VsZik6CiAgICAgICAgcGFzcwoKICAgIGRlZiBvbl9pbnB1dChzZWxmKToKICAgICAgICBzZWxmLmhhc2hfbWFwLnRvYXN0KHNlbGYubGlzdGVuZXIpCgoK"
+                "PyFileData": "ZnJvbSBzaW1wbGVfa2l0IGltcG9ydCBTY3JlZW4sIEhhc2hNYXAKCgpjbGFzcyBQcm9kdWN0KFNjcmVlbik6CiAgICBkZWYgX19pbml0X18oc2VsZiwgaGFzaF9tYXA6IEhhc2hNYXAsICoqa3dhcmdzKToKICAgICAgICBzdXBlcigpLl9faW5pdF9fKGhhc2hfbWFwLCAqKmt3YXJncykKCiAgICBkZWYgb25fc3RhcnQoc2VsZik6CiAgICAgICAgcGFzcwoKICAgIGRlZiBvbl9pbnB1dChzZWxmKToKICAgICAgICBpZiBzZWxmLmxpc3RlbmVyID09ICdzZXRfZW4nOgogICAgICAgICAgICBzZWxmLmhhc2hfbWFwWydzZXRMb2NhbGUnXSA9ICdlbicKICAgICAgICBlbGlmIHNlbGYubGlzdGVuZXIgPT0gJ3NldF9ydSc6CiAgICAgICAgICAgIHNlbGYuaGFzaF9tYXBbJ3NldExvY2FsZSddID0gJ3J1JwoKCg=="
             }
         ],
         "StyleTemplates": [],

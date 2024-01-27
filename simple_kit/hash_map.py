@@ -80,3 +80,6 @@ class HashMap:
 
     def no_refresh(self):
         self['NoRefresh'] = ''
+
+    def update_configurations(self):
+        self.put('UpdateConfigurations')
