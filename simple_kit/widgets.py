@@ -1,120 +1,51 @@
-from abc import ABC, abstractmethod
-from dataclasses import dataclass
-from typing import List
-import json
-from constants import *
+from typing import List, Literal, Optional
+from pydantic import BaseModel, Field
 
 
-class Widget(ABC):
-    @abstractmethod
-    def __init__(self, **kwargs):
-        self.type: str
-        self.Value: str
-        self.width = WRAP_CONTENT
-        self.height = WRAP_CONTENT
-        self.weight = 0
-
-        if kwargs:
-            for key, value in kwargs.items():
-                self.__dict__[key] = value
-
-    def __repr__(self):
-        return f'Widget(type={self.type}, Value={self.Value})'
-
-    def to_json(self):
-        return json.dumps(self, default=lambda x: vars(x), indent=4)
+class BaseElement(BaseModel):
+    type: str
+    Value: str = ''
+    height: Literal['wrap_content', 'match_parent'] = 'wrap_content'
+    width: Literal['wrap_content', 'match_parent'] = 'match_parent'
+    weight: int = 0
 
 
-class Picture(Widget):
-    def __init__(self, **kwargs):
-        self.Value = '@pic'
-        super().__init__(**kwargs)
-        self.type = "Picture"
+class TextElement(BaseElement):
+    TextSize: str = ''
+    TextColor: str = ''
+    TextBold: bool = False
+    TextItalic: bool = False
 
 
-class TextView(Widget):
-    def __init__(self, **kwargs):
-        self.Value = '@value'
-        super().__init__(**kwargs)
-        self.type = "TextView"
+class LinearLayout(BaseModel):
+    type: str = 'LinearLayout'
+    Variable: Optional[str]
+    height: Literal['wrap_content', 'match_parent'] = 'wrap_content'
+    width: Literal['wrap_content', 'match_parent'] = 'match_parent'
+    weight: int = 0
+    orientation: Literal['vertical', 'horizontal'] = 'horizontal',
+    BackgroundColor: str = '',
+    StrokeWidth: int = 0,
+    padding: int = Field(default=0, alias='Padding')
+    elements: List[BaseElement] = []
 
 
-class CheckBox(Widget):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.type = 'CheckBox'
+class TextView(TextElement):
+    type: str = 'TextView'
 
 
-class PopupMenuButton(Widget):
-    def __init__(self, **kwargs):
-        self.Value = '@value'
-        super().__init__(**kwargs)
-        self.type = "PopupMenuButton"
-        self.show_by_condition = ''
-        self.NoRefresh = False
-        self.document_type = ''
-        self.mask = ''
+class ModernEditText(TextElement):
+    type: str = 'ModernEditText'
 
 
-class LinearLayout(Widget):
-    def __init__(self, *args, **kwargs):
-        self.type = 'LinearLayout'
-        self.orientation = "vertical"
-
-        super().__init__(**kwargs)
-        self.Elements = list(args) or []
-
-    def append(self, *widgets):
-        for widget in widgets:
-            self.Elements.append(widget)
+class Button(TextElement):
+    variable: str = Field(alias='Variable')
 
 
-class Options:
-    def __init__(self, search_enabled=True, save_position=True, override_search=False):
-        self.options = {
-            'search_enabled': search_enabled,
-            'save_position': save_position,
-            'override_search': override_search
-        }
-
-
-class CustomCards:
-    def __init__(self, layout: LinearLayout, options: Options, cardsdata: List[dict] = []):
-        self.customcards = {
-            'options': options or Options(),
-            'layout': layout,
-            'cardsdata': cardsdata
-        }
-
-    def to_json(self):
-        return json.dumps(self, default=lambda x: vars(x), indent=4, ensure_ascii=False).encode('utf8').decode()
-
-
-class CustomTable:
-    def __init__(self, layout: LinearLayout, options: Options, tabledata: List[dict]):
-        self.customtable = {
-            'options': options or Options(),
-            'layout': layout,
-            'tabledata': tabledata
-        }
-
-    def to_json(self):
-        return json.dumps(self, default=lambda x: vars(x), indent=4, ensure_ascii=False).encode('utf8').decode()
-
-
-@dataclass
-class ModernField:
-    hint: str = ''
-    default_text: str = ''
-    counter: bool = False
-    counter_max: int = 0
-    input_type: int = 0
-    password: bool = False
-    events: bool = False
-
-    def to_json(self):
-        return json.dumps(
-            self,
-            default=lambda x: {k: v for k, v in vars(x).items() if v},
-            indent=4, ensure_ascii=False
-        ).encode('utf8').decode()
+class Operation(BaseModel):
+    name: str = Field(alias='Name')
+    hide_toolbar: bool = Field(default=False, alias="hideToolBarScreen")
+    hide_bottom_bar: bool = Field(default=False, alias="hideBottomBarScreen")
+    no_scroll: bool = Field(default=False, alias="noScroll")
+    no_confirmation: bool = Field(default=False, alias="noConfirmation")
+    elements: List[LinearLayout]
