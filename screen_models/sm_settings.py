@@ -9,7 +9,6 @@ class SettingsScreen(BaseScreen):
 
     def init_screen(self) -> None:
         pass
-        # self._render_screen()
 
     def on_start(self):
         if self.is_init:
