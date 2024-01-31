@@ -11,3 +11,8 @@ def app_on_start(hash_map: HashMap):
 @HashMap()
 def settings_on_start(hash_map: HashMap):
     create_screen(hash_map, SettingsScreen).on_start()
+
+
+@HashMap()
+def settings_on_input(hash_map: HashMap):
+    create_screen(hash_map, SettingsScreen).on_input()

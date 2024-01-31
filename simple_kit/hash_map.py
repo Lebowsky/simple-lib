@@ -84,5 +84,17 @@ class HashMap:
     def beep(self, tone=''):
         self.hash_map.put('beep', str(tone))
 
+    def set_json_screen(self, screen: dict):
+        self.put('setJSONScreen', screen, to_json=True)
+
+    def get_json_screen(self):
+        self.put('getJSONScreen')
+
+    def json_screen(self, screen: dict):
+        self.get('JSONScreen', from_json=True)
+
+    def set_configuration(self, config: dict):
+        self.put('setJSONConfiguration', config, to_json=True)
+
     def update_configurations(self):
         self.put('UpdateConfigurations')
