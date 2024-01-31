@@ -1,0 +1,80 @@
+{
+    "ClientConfiguration": {
+        "ConfigurationName": "Новая конфигурация",
+        "ConfigurationDescription": "",
+        "ConfigurationVersion": "0.0.1",
+        "Processes": [
+            {
+                "type": "Process",
+                "ProcessName": "[SettingsProcess]",
+                "DefineOnBackPressed": false,
+                "hidden": false,
+                "login_screen": false,
+                "SC": false,
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "[SettingsScreen]",
+                        "Timer": false,
+                        "hideToolBarScreen": false,
+                        "hideBottomBarScreen": false,
+                        "noScroll": false,
+                        "handleKeyUp": false,
+                        "noConfirmation": false,
+                        "Elements": [],
+                        "Handlers": []
+                    }
+                ]
+            }
+        ],
+        "ConfigurationSettings": {
+            "uid": "3cb5eb274ae744aebd50b8832d76a161"
+        },
+        "ConfigurationTags": "",
+        "RunPython": true,
+        "MainMenu": [],
+        "Mediafile": [],
+        "PyHandlers": "ZnJvbSBzaW1wbGVfa2l0IGltcG9ydCBIYXNoTWFwLCBjcmVhdGVfc2NyZWVuCgpmcm9tIHNjcmVlbl9tb2RlbHMgaW1wb3J0IFNldHRpbmdzU2NyZWVuCgoKQEhhc2hNYXAoKQpkZWYgYXBwX29uX3N0YXJ0KGhhc2hfbWFwOiBIYXNoTWFwKToKICAgIGhhc2hfbWFwLnRvYXN0KCJpdCdzIHdvcmshIikKCgojIEBIYXNoTWFwKCkKIyBkZWYgc2V0dGluZ3Nfb25fc3RhcnQoaGFzaF9tYXA6IEhhc2hNYXApOgojICAgICBjcmVhdGVfc2NyZWVuKGhhc2hfbWFwLCBTZXR0aW5nc1NjcmVlbikK",
+        "pyHandlersPath": "D:/projects/simple UI/simple-lib\\main.py",
+        "PyTimerTask": [],
+        "PyFiles": [
+            {
+                "file_path": "D:/projects/simple UI/simple-lib/simple_kit/__init__.py",
+                "PyFileKey": "simple_kit",
+                "PyFileData": "ZnJvbSBoYXNoX21hcCBpbXBvcnQgSGFzaE1hcApmcm9tIHNjcmVlbnNfZmFjdG9yeSBpbXBvcnQgQmFzZVNjcmVlbiwgY3JlYXRlX3NjcmVlbgojIGltcG9ydCB3aWRnZXRzCg=="
+            },
+            {
+                "file_path": "D:/projects/simple UI/simple-lib/simple_kit/hash_map.py",
+                "PyFileKey": "hash_map",
+                "PyFileData": "ZnJvbSB0eXBpbmcgaW1wb3J0IENhbGxhYmxlLCBVbmlvbiwgTGlzdCwgRGljdCwgQW55CmZyb20gZnVuY3Rvb2xzIGltcG9ydCB3cmFwcwppbXBvcnQganNvbgoKCmNsYXNzIEhhc2hNYXA6CiAgICBkZWYgX19pbml0X18oc2VsZik6CiAgICAgICAgc2VsZi5oYXNoX21hcCA9IE5vbmUKCiAgICBkZWYgX19jYWxsX18oc2VsZiwgZnVuYzogQ2FsbGFibGVbLi4uLCBOb25lXSk6CiAgICAgICAgQHdyYXBzKGZ1bmMpCiAgICAgICAgZGVmIHdyYXBwZXIoaGFzaF9tYXAsICphcmdzLCAqKmt3YXJncyk6CiAgICAgICAgICAgIHNlbGYuaGFzaF9tYXAgPSBoYXNoX21hcAogICAgICAgICAgICBmdW5jKHNlbGYpCiAgICAgICAgICAgIHJldHVybiBoYXNoX21hcAoKICAgICAgICByZXR1cm4gd3JhcHBlcgoKICAgIGRlZiBfX2dldGl0ZW1fXyhzZWxmLCBpdGVtKToKICAgICAgICByZXR1cm4gc2VsZi5nZXQoaXRlbSwgRmFsc2UpCgogICAgZGVmIF9fc2V0aXRlbV9fKHNlbGYsIGtleSwgdmFsdWUpOgogICAgICAgIHNlbGYucHV0KGtleSwgdmFsdWUsIEZhbHNlKQoKICAgIEBwcm9wZXJ0eQogICAgZGVmIGxpc3RlbmVyKHNlbGYpOgogICAgICAgIHJldHVybiBzZWxmWydsaXN0ZW5lciddCgogICAgQGxpc3RlbmVyLnNldHRlcgogICAgZGVmIGxpc3RlbmVyKHNlbGYsIHYpOgogICAgICAgIHBhc3MKCiAgICBAcHJvcGVydHkKICAgIGRlZiBldmVudChzZWxmKToKICAgICAgICByZXR1cm4gc2VsZlsnZXZlbnQnXQoKICAgIEBldmVudC5zZXR0ZXIKICAgIGRlZiBldmVudChzZWxmLCB2KToKICAgICAgICBwYXNzCgogICAgZGVmIGdldChzZWxmLCBpdGVtLCBmcm9tX2pzb249RmFsc2UpOgogICAgICAgIGlmIGZyb21fanNvbjoKICAgICAgICAgICAgcmV0dXJuIGpzb24ubG9hZHMoc2VsZi5oYXNoX21hcC5nZXQoaXRlbSkpIGlmIHNlbGYuaGFzaF9tYXAuZ2V0KGl0ZW0pIGVsc2UgTm9uZQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHJldHVybiBzZWxmLmhhc2hfbWFwLmdldChpdGVtKQoKICAgIGRlZiBnZXRfYm9vbChzZWxmLCBpdGVtKSAtPiBib29sOgogICAgICAgIHZhbHVlID0gc3RyKHNlbGYuaGFzaF9tYXAuZ2V0KGl0ZW0pKS5sb3dlcigpIG5vdCBpbiAoJzAnLCAnZmFsc2UnLCAnbm9uZScpCiAgICAgICAgcmV0dXJuIHZhbHVlCgogICAgZGVmIGdldF9qc29uKHNlbGYsIGl0ZW0pOgogICAgICAgIHJldHVybiBqc29uLmxvYWRzKHNlbGYuaGFzaF9tYXAuZ2V0KGl0ZW0pKSBpZiBzZWxmLmhhc2hfbWFwLmdldChpdGVtKSBlbHNlIE5vbmUKCiAgICBkZWYgcHV0KHNlbGYsIGtleSwgdmFsdWU6IFVuaW9uW3N0ciwgTGlzdCwgRGljdCwgYm9vbF0gPSAnJywgdG9fanNvbj1GYWxzZSk6CiAgICAgICAgaWYgdG9fanNvbjoKICAgICAgICAgICAgc2VsZi5oYXNoX21hcC5wdXQoa2V5LCBqc29uLmR1bXBzKHZhbHVlKSkKICAgICAgICBlbHNlOgogICAgICAgICAgICBpZiBpc2luc3RhbmNlKHZhbHVlLCBib29sKToKICAgICAgICAgICAgICAgIHZhbHVlID0gc3RyKHZhbHVlKS5sb3dlcigpCiAgICAgICAgICAgIHNlbGYuaGFzaF9tYXAucHV0KGtleSwgc3RyKHZhbHVlKSkKCiAgICBkZWYgcHV0X2Jvb2woc2VsZiwga2V5LCB2YWx1ZTogQW55KToKICAgICAgICB2YWx1ZSA9IEZhbHNlIGlmIHN0cih2YWx1ZSkubG93ZXIoKSBpbiAoJ2ZhbHNlJywgJ25vbmUnLCAnMCcpIGVsc2UgYm9vbCh2YWx1ZSkKICAgICAgICBzZWxmLnB1dChrZXksIHZhbHVlKQoKICAgIGRlZiByZW1vdmUoc2VsZiwga2V5KToKICAgICAgICBzZWxmLmhhc2hfbWFwLnJlbW92ZShrZXkpCgogICAgZGVmIHRvYXN0KHNlbGYsIHRleHQpOgogICAgICAgIHNlbGYuaGFzaF9tYXAucHV0KCd0b2FzdCcsIHN0cih0ZXh0KSkKCiAgICBkZWYgc2hvd19zY3JlZW4oc2VsZiwgc2NyZWVuX25hbWUpOgogICAgICAgIHNlbGYucHV0KCdTaG93U2NyZWVuJywgc2NyZWVuX25hbWUpCgogICAgZGVmIGZpbmlzaF9wcm9jZXNzKHNlbGYpOgogICAgICAgIHNlbGYuaGFzaF9tYXAucHV0KCdGaW5pc2hQcm9jZXNzJywgJycpCgogICAgZGVmIGZpbmlzaF9wcm9jZXNzX3Jlc3VsdChzZWxmKToKICAgICAgICBzZWxmLmhhc2hfbWFwLnB1dCgnRmluaXNoUHJvY2Vzc1Jlc3VsdCcsICcnKQoKICAgIGRlZiBub19yZWZyZXNoKHNlbGYpOgogICAgICAgIHNlbGZbJ05vUmVmcmVzaCddID0gJycKCiAgICBkZWYgYmVlcChzZWxmLCB0b25lPScnKToKICAgICAgICBzZWxmLmhhc2hfbWFwLnB1dCgnYmVlcCcsIHN0cih0b25lKSkKCiAgICBkZWYgdXBkYXRlX2NvbmZpZ3VyYXRpb25zKHNlbGYpOgogICAgICAgIHNlbGYucHV0KCdVcGRhdGVDb25maWd1cmF0aW9ucycp"
+            },
+            {
+                "file_path": "D:/projects/simple UI/simple-lib/simple_kit/screens_factory.py",
+                "PyFileKey": "screens_factory",
+                "PyFileData": "ZnJvbSB0eXBpbmcgaW1wb3J0IFVuaW9uLCBDYWxsYWJsZSwgQW55LCBOb1JldHVybgppbXBvcnQgcmVwcmxpYgoKZnJvbSBzaW1wbGVfa2l0IGltcG9ydCBIYXNoTWFwCgpjdXJyZW50X3NjcmVlbjogVW5pb25bJ0Jhc2VTY3JlZW4nLCBOb25lXSA9IE5vbmUKbmV4dF9zY3JlZW46IFVuaW9uWydCYXNlU2NyZWVuJywgTm9uZV0gPSBOb25lCgoKY2xhc3MgQmFzZVNjcmVlbjoKICAgIHNjcmVlbl9uYW1lOiBzdHIKICAgIHByb2Nlc3NfbmFtZTogc3RyCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIGhhc2hfbWFwOiBIYXNoTWFwLCAqKmt3YXJncyk6CiAgICAgICAgc2VsZi5rd2FyZ3MgPSBrd2FyZ3MKICAgICAgICBzZWxmLmhhc2hfbWFwOiBIYXNoTWFwID0gaGFzaF9tYXAKICAgICAgICBzZWxmLnBhcmVudF9zY3JlZW4gPSBrd2FyZ3MuZ2V0KCdwYXJlbnQnKQogICAgICAgIHNlbGYuaXNfZmluaXNoX3Byb2Nlc3MgPSBGYWxzZQogICAgICAgIHNlbGYucmVzdWx0X2hhbmRsZXI6IFVuaW9uW0NhbGxhYmxlW1tBbnldLCBOb25lXSwgTm9uZV0gPSBOb25lCiAgICAgICAgc2VsZi5yZXN1bHRfcHJvY2VzcyA9IE5vbmUKICAgICAgICBzZWxmLnNjcmVlbl9kYXRhID0ge30KICAgICAgICBzZWxmLmhhc2hfbWFwX2tleXMgPSBbXQoKICAgIEBwcm9wZXJ0eQogICAgZGVmIGxpc3RlbmVyKHNlbGYpOgogICAgICAgIGlmIHNlbGYuaGFzaF9tYXBbJ2V2ZW50J10gPT0gJ29uUmVzdWx0JyBhbmQgc2VsZi5yZXN1bHRfaGFuZGxlcjoKICAgICAgICAgICAgc2VsZi5yZXN1bHRfaGFuZGxlcihzZWxmLnJlc3VsdF9wcm9jZXNzKQogICAgICAgICAgICBzZWxmLnJlc3VsdF9oYW5kbGVyID0gTm9uZQoKICAgICAgICByZXR1cm4gc2VsZi5oYXNoX21hcC5saXN0ZW5lcgoKICAgIEBsaXN0ZW5lci5zZXR0ZXIKICAgIGRlZiBsaXN0ZW5lcihzZWxmLCB2KToKICAgICAgICBwYXNzCgogICAgQHByb3BlcnR5CiAgICBkZWYgZXZlbnQoc2VsZik6CiAgICAgICAgcmV0dXJuIHNlbGYuaGFzaF9tYXAuZXZlbnQKCiAgICBAZXZlbnQuc2V0dGVyCiAgICBkZWYgZXZlbnQoc2VsZiwgdik6CiAgICAgICAgcGFzcwoKICAgIGRlZiBvbl9zdGFydChzZWxmKToKICAgICAgICBwYXNzCgogICAgZGVmIG9uX2lucHV0KHNlbGYpOgogICAgICAgIHBhc3MKCiAgICBkZWYgaW5pdF9zY3JlZW4oc2VsZikgLT4gTm9uZToKICAgICAgICAiIiJpbXBsZW1lbnQgdGhpcyBtZXRob2QiIiIKICAgICAgICBwYXNzCgogICAgZGVmIHNob3coc2VsZikgLT4gTm9uZToKICAgICAgICBfc2V0X25leHRfc2NyZWVuKHNlbGYpCiAgICAgICAgc2VsZi5pbml0X3NjcmVlbigpCiAgICAgICAgc2VsZi5oYXNoX21hcC5zaG93X3NjcmVlbihzZWxmLnNjcmVlbl9uYW1lKQoKICAgIGRlZiBfdXBkYXRlX2hhc2hfbWFwX2tleXMoc2VsZik6CiAgICAgICAgc2VsZi5oYXNoX21hcC5wdXRfZGF0YSgKICAgICAgICAgICAge2tleTogc2VsZi5zY3JlZW5fZGF0YS5nZXQoa2V5LCAnJykgZm9yIGtleSBpbiBzZWxmLmhhc2hfbWFwX2tleXN9CiAgICAgICAgKQoKICAgIGRlZiBfc2hvd19wYXJlbnRfc2NyZWVuKHNlbGYpIC0+IE5vbmU6CiAgICAgICAgaWYgc2VsZi5wYXJlbnRfc2NyZWVuOgogICAgICAgICAgICBzZWxmLnBhcmVudF9zY3JlZW4uaGFzaF9tYXAgPSBzZWxmLmhhc2hfbWFwCiAgICAgICAgICAgIHNlbGYucGFyZW50X3NjcmVlbi5zaG93KCkKICAgICAgICBlbHNlOgogICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKGYncGFyZW50IHNjcmVlbiBub3Qgc2V0IGZvciB7c2VsZn0hJykKCiAgICBkZWYgX2ZpbmlzaF9wcm9jZXNzKHNlbGYpOgogICAgICAgIHNlbGYuaXNfZmluaXNoX3Byb2Nlc3MgPSBUcnVlCiAgICAgICAgc2VsZi5oYXNoX21hcC5maW5pc2hfcHJvY2VzcygpCgogICAgZGVmIF9maW5pc2hfcHJvY2Vzc19yZXN1bHQoc2VsZiwgcmVzdWx0PU5vbmUpOgogICAgICAgIHNlbGYuaXNfZmluaXNoX3Byb2Nlc3MgPSBUcnVlCgogICAgICAgIGlmIHNlbGYucGFyZW50X3NjcmVlbjoKICAgICAgICAgICAgc2VsZi5wYXJlbnRfc2NyZWVuLmhhc2hfbWFwID0gc2VsZi5oYXNoX21hcAogICAgICAgICAgICBzZWxmLnBhcmVudF9zY3JlZW4ucmVzdWx0X3Byb2Nlc3MgPSByZXN1bHQKICAgICAgICAgICAgX3NldF9uZXh0X3NjcmVlbihzZWxmLnBhcmVudF9zY3JlZW4pCiAgICAgICAgc2VsZi5oYXNoX21hcC5maW5pc2hfcHJvY2Vzc19yZXN1bHQoKQoKICAgIGRlZiBfZ2V0X3NlbGVjdGVkX2NhcmRfZGF0YShzZWxmLCByZW1vdmU9VHJ1ZSk6CiAgICAgICAgc2VsZWN0ZWRfY2FyZF9kYXRhID0gc2VsZi5oYXNoX21hcC5nZXRfanNvbignc2VsZWN0ZWRfY2FyZF9kYXRhJykKICAgICAgICBpZiByZW1vdmU6CiAgICAgICAgICAgIHNlbGYuaGFzaF9tYXAucmVtb3ZlKCdzZWxlY3RlZF9jYXJkX2RhdGEnKQoKICAgICAgICByZXR1cm4gc2VsZWN0ZWRfY2FyZF9kYXRhCgogICAgZGVmIF9pc19yZXN1bHRfcG9zaXRpdmUoc2VsZiwgX2xpc3RlbmVyKSAtPiBib29sOgogICAgICAgIHJldHVybiBzZWxmLmxpc3RlbmVyID09IF9saXN0ZW5lciBhbmQgc2VsZi5ldmVudCA9PSAnb25SZXN1bHRQb3NpdGl2ZScKCiAgICBkZWYgX2lzX3Jlc3VsdF9uZWdhdGl2ZShzZWxmLCBfbGlzdGVuZXIpIC0+IGJvb2w6CiAgICAgICAgcmV0dXJuIHNlbGYubGlzdGVuZXIgPT0gX2xpc3RlbmVyIGFuZCBzZWxmLmV2ZW50ID09ICdvblJlc3VsdE5lZ2F0aXZlJwoKICAgIGRlZiBfbGlzdGVuZXJfbm90X2ltcGxlbWVudGVkKHNlbGYpIC0+IE5vUmV0dXJuOgogICAgICAgIHJhaXNlIE5vdEltcGxlbWVudGVkRXJyb3IoZidsaXN0ZW5lciB7c2VsZi5saXN0ZW5lcn0gbm90IGltcGxlbWVudGVkJykKCiAgICBkZWYgX19zdHJfXyhzZWxmKToKICAgICAgICByZXR1cm4gZid7c2VsZi5wcm9jZXNzX25hbWV9IC8ge3NlbGYuc2NyZWVuX25hbWV9JwoKICAgIGRlZiBfX3JlcHJfXyhzZWxmKToKICAgICAgICBrd2FyZ3MgPSByZXBybGliLnJlcHIoW2Yne2t9PXt2fScgZm9yIGssIHYgaW4gc2VsZi5rd2FyZ3MuaXRlbXMoKV0pCiAgICAgICAgcmV0dXJuIGYne3NlbGYuX19jbGFzc19fLnNjcmVlbl9uYW1lfShoYXNoX21hcCwge2t3YXJnc30pJwoKCmRlZiBfc2V0X25leHRfc2NyZWVuKHNjcmVlbikgLT4gTm9uZToKICAgIGdsb2JhbCBuZXh0X3NjcmVlbgogICAgbmV4dF9zY3JlZW4gPSBzY3JlZW4KICAgIHJldHVybiBuZXh0X3NjcmVlbgoKCmRlZiBjcmVhdGVfc2NyZWVuKGhhc2hfbWFwLCBzY3JlZW5fY2xhc3MpIC0+IEJhc2VTY3JlZW46CiAgICAiIiIKICAgINCc0LXRgtC+0LQg0LTQu9GPINC/0L7Qu9GD0YfQtdC90LjRjyDQvNC+0LTQtdC70Lgg0Y3QutGA0LDQvdCwINGB0L7QvtGC0LLQtdGC0YHRgtCy0YPRjtGJ0LXQuSDRgtC10LrRg9GJ0LXQvNGDINC/0YDQvtGG0LXRgdGB0YMg0Lgg0Y3QutGA0LDQvdGDLgogICAg0KDQtdCw0LvQuNC30L7QstCw0L0g0YHQuNC90LPQu9GC0L7QvSDRh9C10YDQtdC3INCz0LvQvtCx0LDQu9GM0L3Rg9GOINC/0LXRgNC10LzQtdC90L3Rg9GOIGN1cnJlbnRfc2NyZWVuLCDQtNC70Y8g0YHQvtGF0YDQtdC90LXQvdC40Y8g0YHQvtGB0YLQvtGP0L3QuNGPINGC0LXQutGD0YnQtdCz0L4g0Y3QutGA0LDQvdCwCiAgICAiIiIKICAgIGdsb2JhbCBjdXJyZW50X3NjcmVlbiwgbmV4dF9zY3JlZW4KCiAgICBpZiB0eXBlKGN1cnJlbnRfc2NyZWVuKSBpcyBub3Qgc2NyZWVuX2NsYXNzOgogICAgICAgIGlmIHR5cGUobmV4dF9zY3JlZW4pIGlzIHNjcmVlbl9jbGFzczoKICAgICAgICAgICAgY3VycmVudF9zY3JlZW4gPSBuZXh0X3NjcmVlbgogICAgICAgICAgICBuZXh0X3NjcmVlbiA9IE5vbmUKICAgICAgICAgICAgY3VycmVudF9zY3JlZW4uaGFzaF9tYXAgPSBoYXNoX21hcAogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGN1cnJlbnRfc2NyZWVuID0gc2NyZWVuX2NsYXNzKGhhc2hfbWFwKQogICAgZWxzZToKICAgICAgICBjdXJyZW50X3NjcmVlbi5oYXNoX21hcCA9IGhhc2hfbWFwCiAgICAgICAgY3VycmVudF9zY3JlZW4ubGlzdGVuZXIgPSBoYXNoX21hcFsnbGlzdGVuZXInXQogICAgICAgIGN1cnJlbnRfc2NyZWVuLmV2ZW50ID0gaGFzaF9tYXBbJ2V2ZW50J10KCiAgICBpZiBjdXJyZW50X3NjcmVlbi5pc19maW5pc2hfcHJvY2VzczoKICAgICAgICBmaW5pc2hfc2NyZWVuID0gY3VycmVudF9zY3JlZW4KICAgICAgICBjdXJyZW50X3NjcmVlbiA9IE5vbmUKICAgICAgICByZXR1cm4gZmluaXNoX3NjcmVlbgoKICAgIHJldHVybiBjdXJyZW50X3NjcmVlbgo="
+            },
+            {
+                "file_path": "D:/projects/simple UI/simple-lib/screen_models/__init__.py",
+                "PyFileKey": "screen_models",
+                "PyFileData": "IyBmcm9tIHNtX3Byb2R1Y3RzIGltcG9ydCBQcm9kdWN0c0xpc3RTY3JlZW4KZnJvbSBzbV9zZXR0aW5ncyBpbXBvcnQgU2V0dGluZ3NTY3JlZW4K"
+            },
+            {
+                "file_path": "D:/projects/simple UI/simple-lib/screen_models/sm_settings.py",
+                "PyFileKey": "sm_settings",
+                "PyFileData": "ZnJvbSBzaW1wbGVfa2l0IGltcG9ydCBIYXNoTWFwLCBCYXNlU2NyZWVuCgoKY2xhc3MgU2V0dGluZ3NTY3JlZW4oQmFzZVNjcmVlbik6CiAgICBkZWYgX19pbml0X18oc2VsZiwgX2hhc2hfbWFwOiBIYXNoTWFwLCAqKmt3YXJncyk6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXyhfaGFzaF9tYXAsICoqa3dhcmdzKQoKICAgIGRlZiBvbl9zdGFydChzZWxmKToKICAgICAgICBzdXBlcigpLm9uX3N0YXJ0KCkKICAgICAgICBzZWxmLmhhc2hfbWFwLnRvYXN0KCdzY3JlZW4gaXMgcmVhZHknKQoKICAgICAgICAjIHNjcmVlbl9lbGVtZW50cyA9IFsKICAgICAgICAjICAgICBzbV90eXBlcy5WZXJ0aWNhbExheW91dCgKICAgICAgICAjCiAgICAgICAgIyAgICAgKQogICAgICAgICMgXQogICAgICAgICMgc2RtID0gU2NyZWVuRGF0YU1vZGVsKHRpdGxlPSdUSVRMRScsIGlzX3RydWU9VHJ1ZSwgdGFibGVfZGF0YT1bezE6IDEsIDI6IDJ9XSkKICAgICAgICAjIGZhY3RvcnkgPSBzY3JlZW5zLlNjcmVlbkZhY3RvcnkoJ3NldHRpbmdzJywgc2RtKQogICAgICAgICMgc2NyZWVuID0gZmFjdG9yeS5jcmVhdGUoKQogICAgICAgICMgc2VsZi5oYXNoX21hcC5wdXQoJ3NldEpTT05Db25maWd1cmF0aW9uJywgc2NyZWVuLCB0b19qc29uPVRydWUpCgogICAgZGVmIG9uX2lucHV0KHNlbGYpOgogICAgICAgIHN1cGVyKCkub25faW5wdXQoKQo="
+            }
+        ],
+        "StyleTemplates": [],
+        "arch2": true,
+        "CommonHandlers": [
+            {
+                "event": "onLaunch",
+                "listener": "",
+                "action": "run",
+                "type": "python",
+                "method": "app_on_start",
+                "postExecute": ""
+            }
+        ]
+    }
+}

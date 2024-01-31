@@ -1,13 +1,13 @@
 from typing import Union, Callable, Any, NoReturn
 import reprlib
 
-from hash_map import HashMap
+from simple_kit import HashMap
 
-current_screen: Union['Screen', None] = None
-next_screen: Union['Screen', None] = None
+current_screen: Union['BaseScreen', None] = None
+next_screen: Union['BaseScreen', None] = None
 
 
-class Screen:
+class BaseScreen:
     screen_name: str
     process_name: str
 
@@ -18,6 +18,8 @@ class Screen:
         self.is_finish_process = False
         self.result_handler: Union[Callable[[Any], None], None] = None
         self.result_process = None
+        self.screen_data = {}
+        self.hash_map_keys = []
 
     @property
     def listener(self):
@@ -53,6 +55,11 @@ class Screen:
         _set_next_screen(self)
         self.init_screen()
         self.hash_map.show_screen(self.screen_name)
+
+    def _update_hash_map_keys(self):
+        self.hash_map.put_data(
+            {key: self.screen_data.get(key, '') for key in self.hash_map_keys}
+        )
 
     def _show_parent_screen(self) -> None:
         if self.parent_screen:
@@ -104,7 +111,7 @@ def _set_next_screen(screen) -> None:
     return next_screen
 
 
-def create_screen(hash_map: HashMap, screen_class) -> Screen:
+def create_screen(hash_map, screen_class) -> BaseScreen:
     """
     Метод для получения модели экрана соответствующей текущему процессу и экрану.
     Реализован синглтон через глобальную переменную current_screen, для сохренения состояния текущего экрана

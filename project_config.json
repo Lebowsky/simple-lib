@@ -3,8 +3,8 @@
   "modules": {
     "simple_kit": "./simple_kit\\__init__.py",
     "hash_map": "./simple_kit\\hash_map.py",
-    "screen": "./simple_kit\\screen.py",
+    "screens_factory": "./simple_kit\\screens_factory.py",
     "screen_models": "./screen_models\\__init__.py",
-    "sm_products": "./screen_models\\sm_products.py"
+    "sm_settings": "./screen_models\\sm_settings.py"
   }
 }
