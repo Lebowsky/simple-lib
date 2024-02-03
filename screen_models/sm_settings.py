@@ -1,4 +1,4 @@
-from simple_kit import HashMap, BaseScreen
+from simple_kit import HashMap, BaseScreen, widgets
 
 
 class SettingsScreen(BaseScreen):
@@ -88,4 +88,19 @@ class SettingsScreen(BaseScreen):
                 }
             ]
         }
+
+        screen2 = widgets.Operation(
+            name='[SettingsScreen]',
+            elements=[widgets.LinearLayout(
+
+            )]
+        )
         self.hash_map.set_json_screen(screen=screen)
+
+
+if __name__ == '__main__':
+    screen2 = widgets.Operation(
+        name='[SettingsScreen]',
+        elements=[widgets.LinearLayout()],
+    ).dict()
+    print(screen2)

@@ -63,6 +63,14 @@ class HashMap:
         value = False if str(value).lower() in ('false', 'none', '0') else bool(value)
         self.put(key, value)
 
+    def put_data(self, data: dict, fill_none=False, default=''):
+        if data:
+            for key, value in data.items():
+                if value is None and fill_none:
+                    value = default
+
+                self[key] = value
+
     def remove(self, key):
         self.hash_map.remove(key)
 
